@@ -44,7 +44,7 @@ describe('process.order(payload, callback)', function () {
         if (err) return done(err);
         console.log("result:");
         console.log(result);
-        expect(result.prices).to.equal(183.46);
+        expect(result.total).to.equal(232.9942);
         done();
       })
    })

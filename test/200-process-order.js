@@ -32,6 +32,42 @@ describe('process.order(payload, callback)', function () {
       })
   })
 
+ it('must check if prices / quantities / names are defined', function (done) {
+      var body = { prices: [ 91.73 ],
+                   quantities: [ 2, 3 ],
+                   country: 'HU',
+                   reduction: 'STANDARD' };
+
+      process.order(body, function (err, result) {
+        if (err) return done(err);
+        expect(result).to.deep.equal({  });
+        done();
+      })
+  })
+
+
+ it('must check if prices / quantities / names have the same size', function (done) {
+      var body = { prices: [ 91.73 ],
+                   quantities: [ 2, 3 ],
+                   names:
+                    [ 'Tea',
+                      'Glove',
+                      'Worms',
+                      'Water',
+                      'Carrot',
+                      'Jacket',
+                      'Stinking cheese',
+                      'Net' ],
+                   country: 'HU',
+                   reduction: 'STANDARD' };
+
+      process.order(body, function (err, result) {
+        if (err) return done(err);
+        expect(result).to.deep.equal({  });
+        done();
+      })
+  })
+
    it('compute a simple request', function (done) {
       var body = { prices: [ 91.73 ],
                    quantities: [ 2 ],

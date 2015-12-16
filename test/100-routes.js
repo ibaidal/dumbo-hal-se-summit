@@ -6,14 +6,14 @@ var supertest = require('supertest');
 var Server = require('../server');
 var routes = require('../lib/routes');
 
-describe('POST /order', function () {
+describe('Checking route POST /order', function () {
   var $routes;
   beforeEach(function () {
-    sinon.spy(routes, 'order')
+    sinon.spy(routes, 'order');
   });
   afterEach(function () {
     routes.order.restore();
-  })
+  });
 
   var supertest = startServer();
 
@@ -24,19 +24,19 @@ describe('POST /order', function () {
       .end(function (err) {
         if (err) return done(err);
         expect(routes.order).to.have.been.calledWith(sinon.match({body: {some: 'body'}}));
-        done()
-      })
-  })
-})
+        done();
+      });
+  });
+});
 
-describe('POST /feedback', function () {
+describe('Checking route POST /feedback', function () {
   var $routes;
   beforeEach(function () {
-    sinon.spy(routes, 'feedback')
+    sinon.spy(routes, 'feedback');
   });
   afterEach(function () {
     routes.feedback.restore();
-  })
+  });
 
   var supertest = startServer();
 
@@ -47,16 +47,17 @@ describe('POST /feedback', function () {
       .end(function (err) {
         if (err) return done(err);
         expect(routes.feedback).to.have.been.calledWith(sinon.match({body: {my: 'feedback'}}));
-        done()
-      })
-  })
-})
+        done();
+      });
+  });
+});
 
 function startServer () {
   beforeEach(function () {
     previousPort = process.env.PORT;
     process.env.PORT = 21345;
-  })
+  });
+
   afterEach(function () {
     process.env.PORT = previousPort;
   });
@@ -64,13 +65,13 @@ function startServer () {
   beforeEach(function (done) {
     server = new Server();
     server.start(done);
-  })
+  });
 
   afterEach(function (done) {
     server.stop(done);
-  })
+  });
 
   return function () {
     return supertest('http://localhost:21345');
-  }
+  };
 }

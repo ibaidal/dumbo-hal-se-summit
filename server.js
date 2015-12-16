@@ -16,12 +16,13 @@ function Server (doLogRequests) {
   app.use(bodyParser.json());
 
   app.get('/status', function (req, res) {
-    res.json({up: true})
-  })
+    res.json({up: true});
+  });
 
   app.post('/order', function (req, res, next) {
     routes.order(req, res, next);
   });
+
   app.post('/feedback', function (req, res, next) {
     routes.feedback(req, res, next);
   });

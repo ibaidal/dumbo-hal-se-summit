@@ -7,8 +7,8 @@ describe('process.order(payload, callback)', function () {
       if (err) return done(err);
       expect(result).to.deep.equal({});
       done();
-    })
-  })
+    });
+  });
 
  it('must not process non STANDARD rate', function (done) {
       var body = { prices: [ 91.73 ],
@@ -29,8 +29,8 @@ describe('process.order(payload, callback)', function () {
         if (err) return done(err);
         expect(result).to.deep.equal({  });
         done();
-      })
-  })
+      });
+  });
 
  it('must check if prices / quantities / names are defined', function (done) {
       var body = { prices: [ 91.73 ],
@@ -42,8 +42,8 @@ describe('process.order(payload, callback)', function () {
         if (err) return done(err);
         expect(result).to.deep.equal({  });
         done();
-      })
-  })
+      });
+  });
 
 
  it('must check if prices / quantities / names have the same size', function (done) {
@@ -65,8 +65,8 @@ describe('process.order(payload, callback)', function () {
         if (err) return done(err);
         expect(result).to.deep.equal({  });
         done();
-      })
-  })
+      });
+  });
 
    it('compute a simple request', function (done) {
       var body = { prices: [ 91.73 ],
@@ -82,7 +82,7 @@ describe('process.order(payload, callback)', function () {
         console.log(result);
         expect(result.total).to.equal(232.9942);
         done();
-      })
-   })
-})
+      });
+   });
+});
 

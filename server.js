@@ -27,6 +27,18 @@ function Server (doLogRequests) {
     routes.feedback(req, res, next);
   });
 
+  app.get('/categories', function(req, res, next) {
+    routes.categories(req, res, next);
+  });
+
+  app.get('/licenses', function(req, res, next) {
+    routes.licenses(req, res, next);
+  });
+
+  app.get('/vouchers', function(req, res, next) {
+    routes.vouchers(req, res, next);
+  });
+
   var server = http.createServer(app);
   server.start = server.listen.bind(server, process.env.PORT || 3000);
   server.stop = server.close.bind(server);

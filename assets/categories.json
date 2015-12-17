@@ -1,0 +1,110 @@
+[{
+    "item": "Shirt",
+    "category": "Clothes"
+}, {
+    "item": "Trouser",
+    "category": "Clothes"
+}, {
+    "item": "Jean",
+    "category": "Clothes"
+}, {
+    "item": "Glove",
+    "category": "Clothes"
+}, {
+    "item": "Socks",
+    "category": "Clothes"
+}, {
+    "item": "Shoe",
+    "category": "Clothes"
+}, {
+    "item": "Coat",
+    "category": "Clothes"
+}, {
+    "item": "Jacket",
+    "category": "Clothes"
+}, {
+    "item": "Pyjama",
+    "category": "Clothes"
+}, {
+    "item": "Beret",
+    "category": "Clothes"
+}, {
+    "item": "Hat",
+    "category": "Clothes"
+}, {
+    "item": "Spacesuit for elephant",
+    "category": "Clothes"
+}, {
+    "item": "Water gun",
+    "category": "Weapons"
+}, {
+    "item": "Wooden sword",
+    "category": "Weapons"
+}, {
+    "item": "Stinking cheese",
+    "category": "Weapons"
+}, {
+    "item": "Dalek",
+    "category": "Weapons"
+}, {
+    "item": "Laser saber",
+    "category": "Weapons"
+}, {
+    "item": "Death Star",
+    "category": "Weapons"
+}, {
+    "item": "Cheese",
+    "category": "Food"
+}, {
+    "item": "Candy",
+    "category": "Food"
+}, {
+    "item": "Paella",
+    "category": "Food"
+}, {
+    "item": "Tomato",
+    "category": "Vegetables"
+}, {
+    "item": "Cucumber",
+    "category": "Vegetables"
+}, {
+    "item": "Carrot",
+    "category": "Vegetables"
+}, {
+    "item": "Tomato juice",
+    "category": "Drinks"
+}, {
+    "item": "Apple juice",
+    "category": "Drinks"
+}, {
+    "item": "Diet coke",
+    "category": "Drinks"
+}, {
+    "item": "Water",
+    "category": "Drinks"
+}, {
+    "item": "Coffee",
+    "category": "Drinks"
+}, {
+    "item": "Tea",
+    "category": "Drinks"
+}, {
+    "item": "Wine",
+    "category": "Alcohol"
+}, {
+    "item": "Beer",
+    "category": "Alcohol"
+}, {
+    "item": "Whisky",
+    "category": "Alcohol"
+}, {
+    "item": "Fishing rod",
+    "category": "Fishing"
+}, {
+    "item": "Worms",
+    "category": "Fishing"
+}, {
+    "item": "Net",
+    "category": "Fishing"
+}
+]

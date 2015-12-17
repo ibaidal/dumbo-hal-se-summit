@@ -4,10 +4,10 @@ var expected_result = {};
 
 describe('process.categories(payload, callback)', function () {
   
-  it('calls back with an empty object', function (done) {
+  it('calls back with a 36-item table', function (done) {
       process.categories({}, function (err, result) {
       if (err) return done(err);
-      expect(result).to.deep.equal(expected_result);
+      expect(result).to.have.length(36);
       done();
     });
   });
